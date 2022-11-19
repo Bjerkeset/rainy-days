@@ -1,0 +1,57 @@
+
+footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* max-height: 300px; */
+}
+
+.footer-container {
+    background-color: var(--footer);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+
+}
+.navigation-list h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info-list h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.list li {
+    padding: 0.3rem;
+}
+
+.sosial-list{
+    display: flex;
+    flex-direction:column;
+}
+
+.sosial-list h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.sosial-list ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 1rem;
+}
+
+.sosial-list a {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+

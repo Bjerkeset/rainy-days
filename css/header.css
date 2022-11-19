@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ header{
+    transition: 0.3s ease;
+}
+
+header:hover {
+    background-color: black;
+}
+
+header:hover a {
+    color: white;
+
+}
+
+header:hover span{
+    background-color: white;
+}
+
+header:hover img {
+    display: block;
+    filter: saturate(100);
+    filter: brightness(100);
+}
+
+li {
+    list-style: none;
+}
+
+.nav-item a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.3rem;
+} 
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span{
+
+    background-color: var(--black);
+}
+
+.hamburger:hover {
+    background-color: var(--black);
+}
+
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+
+@media (max-width:768px){
+    
+    .hamburger{
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-img{
+        display: none;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--black);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s; 
+    }
+    
+    .nav-item {
+        margin: 16px 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+}

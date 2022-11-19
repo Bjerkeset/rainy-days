@@ -1,0 +1,70 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0 0 0; 
+    column-gap: 10vw;
+    flex-wrap: wrap;
+}
+
+section{
+    background-color: lightgray;
+}
+
+.contact-form{
+    /* background-color: lightgray; */
+}
+
+.contact-form-container{
+    background-color: lightblue;
+    width: 30vw;
+    display: flex;
+    padding: 200px 0;
+    justify-content: center;
+}
+
+.contact-text p{
+    margin: 1rem;
+    font-size: 1.6rem;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-inputs label {
+    font-size: 1.2rem;
+    margin: 10px 0 0 0;
+    
+}
+
+.form-inputs input {
+    height: 2rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+ #terms{
+    height: 1rem;
+    margin: 5px 0 5px 0;
+}
+
+.checkbox{
+    margin: 15px 0 10px 0;
+}
+
+#submit{
+    background-color: lightgreen;
+    height: 50px;
+    margin: 0 5rem;
+    border: none;
+    border-radius: 25px;
+}

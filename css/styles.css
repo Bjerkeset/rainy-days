@@ -1,0 +1,104 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(../images/);
+@import url(./product.css);
+
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --white:#fff;
+    --black: rgb(0, 0, 0);
+    --light-blue: rgb(45, 83, 147);
+    --footer: #BCC4C9;
+    --main-background:#C9D1D6;
+    --product-overlay-color: #fafafaf2;
+    --product-background: #F6F6F6;
+    --tag-color: #284167;
+    --tag-text-color: #D3D3D3;
+    --button-color: #4354ED;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.background-image {
+    background-color: var(--light-blue);
+    height: 100vh;
+    background-image:url(../images/front-page-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: right;
+    width: 100%;
+} 
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    /* margin-left: 35vw;     */
+}
+
+.container--front-page {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+.front-page-title {
+    /* background-color: lightblue; */
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.see-products {
+    /* background-color: lightcyan; */
+    padding: 1rem;
+}
+
+
+.see-products a{
+    font-size: 3rem;
+    /* background-color: lightcoral; */
+    padding: 10px;
+    color: black;
+    transition: 0.5s ease;
+    border-radius: 15px;
+}
+
+
+.see-products a:hover {
+    background-color: var(--black);
+    font-size: 3.3rem;
+    color: var(--white);
+}
+
+
+.rest-of-page {
+    /* height: 1000px; */
+    background-color: var(--light-blue);
+}
+
+
+footer {
+    display: none;
+}
+
+@media (min-width:768px){
+    footer{
+        display: block;
+    }
+}
+
