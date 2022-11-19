@@ -10,28 +10,37 @@ main{
     justify-content: center;
     margin: 10vh 0 0 0; 
     column-gap: 10vw;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
-
-section{
-    background-color: lightgray;
-}
-
-.contact-form{
-    /* background-color: lightgray; */
-}
+ 
+.contact-info-section{
+    display: flex;
+    
+    /* background-color: lightcoral; */
+    max-width: 366px;
+} 
 
 .contact-form-container{
-    background-color: lightblue;
-    width: 30vw;
+    background-color: var(--form-background);
     display: flex;
-    padding: 200px 0;
+    padding: 200px 5vw;
     justify-content: center;
+    box-shadow: 0 0 10px rgba(28, 28, 28, 0.2);
+}
+.contact-image img{
+    border-radius: 50%;
+    height: 50%;
+    width:calc(60% + 10vw);
+    margin-top: 5vh;
 }
 
+.contact-text {
+    
+}
 .contact-text p{
+    background-color: lightblue;
     margin: 1rem;
-    font-size: 1.6rem;
+    font-size: calc(1rem + 0.5vw);
 }
 
 .form-inputs{
@@ -41,15 +50,17 @@ section{
 }
 
 .form-inputs label {
-    font-size: 1.2rem;
+    font-size: calc(1rem + 1vw);
     margin: 10px 0 0 0;
     
 }
 
 .form-inputs input {
-    height: 2rem;
+    height: calc(2rem + 1vw);
+    /* height: 2rem; */
     border: none;
     font-size: 1.2rem;
+    border-radius: 20;
 }
 
  #terms{
