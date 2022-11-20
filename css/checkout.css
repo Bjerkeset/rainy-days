@@ -11,8 +11,8 @@ main {
     flex-wrap: wrap;
     gap: 5vw;
     background-color: var(--main-background);
-    height: 100vh;
     margin-top: 10vh;
+    min-height: 100vh;
 }
 
 
