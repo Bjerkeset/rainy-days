@@ -26,7 +26,9 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+main{
+    min-height: 100vh;
+}
 a{
     text-decoration: none;
     color: var(--black);
@@ -47,11 +49,9 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 15vh;
-    /* margin-left: 35vw;     */
 }
 
 .container--front-page {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -59,21 +59,18 @@ a{
 
 
 .front-page-title {
-    /* background-color: lightblue; */
     padding: 1rem;
     font-size: 1.5rem;
 }
 
 
 .see-products {
-    /* background-color: lightcyan; */
     padding: 1rem;
 }
 
 
 .see-products a{
     font-size: 3rem;
-    /* background-color: lightcoral; */
     padding: 10px;
     color: black;
     transition: 0.5s ease;
@@ -89,7 +86,6 @@ a{
 
 
 .rest-of-page {
-    /* height: 1000px; */
     background-color: var(--light-blue);
 }
 

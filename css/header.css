@@ -65,7 +65,7 @@ li {
 }
 
 .nav-link:hover{
-    color: dodgerblue;
+    color: rgb(23, 126, 229);
 }
 
 .hamburger{
@@ -105,26 +105,28 @@ li {
         display: none;
     }
 
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(43deg);
+    }
+    
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(143deg);
-    }
     .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-143zdeg);
+        transform: translateY(-8px) rotate(-43deg);
     }
 
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px;
         gap: 0;
         flex-direction: column;
         background-color: var(--black);
         width: 100%;
         text-align: center;
         transition: 0.3s; 
+        z-index: 101;
     }
     
     .nav-item {
